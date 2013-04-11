@@ -4,6 +4,9 @@ import java.sql.Date;
 import java.util.ArrayList;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import play.data.validation.Required;
 import play.db.jpa.Blob;
@@ -41,8 +44,21 @@ public class Person extends Model {
 	private String generaldescription;
 	private ArrayList<Blob> pictures;
 
+	@OneToMany
 	private ArrayList<Person> listOfChilds;
 
+	@OneToOne
+	private Person marriedWith;
+
+	@ManyToOne
+	private Person dad;
+
+	@ManyToOne
+	private Person mom;
+
+	/**
+	 * default constructor
+	 */
 	public Person() {
 		// TODO Auto-generated constructor stub
 	}
@@ -183,4 +199,27 @@ public class Person extends Model {
 		this.gender = gender;
 	}
 
+	public Person getMarriedWith() {
+		return marriedWith;
+	}
+
+	public void setMarriedWith(Person marriedWith) {
+		this.marriedWith = marriedWith;
+	}
+
+	public Person getDad() {
+		return dad;
+	}
+
+	public void setDad(Person dad) {
+		this.dad = dad;
+	}
+
+	public Person getMom() {
+		return mom;
+	}
+
+	public void setMom(Person mom) {
+		this.mom = mom;
+	}
 }
