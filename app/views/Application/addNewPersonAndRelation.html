@@ -1,0 +1,152 @@
+<html>
+<head>
+<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css"
+	rel="stylesheet">
+</head>
+#{header/}
+<body>
+
+	<div class="span2">
+		#{sidebar/}
+	</div>
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div id="addNewPersonDiv" class="span10 container form-horizontal">
+				#{form @Application.addNewPersonAndRelation()}
+				<div class="control-group ">
+					<label class="control-label" for="name">isim</label>
+					<div class="controls">
+						<input type="text" id="name" name="name" placeholder="name" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="surname">soyisim</label>
+					<div class="controls">
+						<input type="text" id="surname" name="surname"
+							placeholder="surname" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="gender">Gender</label>
+					<div class="controls">
+						<input type="text" id="gender" name="gender" placeholder="gender" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="birthdate">Doğum tarihi</label>
+					<div class="controls">
+						<input type="date" class="datetimepicker input-append date"
+							data-date-format="dd-mm-yyyy"
+							id="birthdate" name="birthdate" placeholder="birthdate" />
+					</div>
+				</div>
+				
+				<div class="control-group ">
+					<label class="control-label" for="deathdate">ölüm tarihi</label>
+					<div class="controls">
+						<input type="date" id="deathdate" name="deathdate"
+							placeholder="deathdate" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="eyecolor">göz rengi</label>
+					<div class="controls">
+						<input type="text" id="eyecolor" name="eyecolor"
+							placeholder="eyecolor" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="height">boy</label>
+					<div class="controls">
+						<input type="number" id="height" name="height"
+							placeholder="height" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="mothername">anne ismi</label>
+					<div class="controls">
+						<input type="text" id="mothername" name="mothername"
+							placeholder="mothername" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="fathername">baba ismi</label>
+					<div class="controls">
+						<input type="text" id="fathername" name="fathername"
+							placeholder="fathername" />
+
+					</div>
+				</div>
+				<div class="control-group ">
+					<label class="control-label" for="childrennumber">çocuk
+						sayısı</label>
+					<div class="controls">
+						<input type="text" id="childrennumber" name="childrennumber"
+							placeholder="childrennumber" />
+					</div>
+				</div>
+				<div class="control-group ">
+					<label class="control-label" for="inputPassword">ilk okul
+						ismi</label>
+					<div class="controls">
+						<input type="text" id="primaryschoolname" name="primaryschoolname"
+							placeholder="primaryschoolname" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="secondaryschoolname">Lise
+						ismi</label>
+					<div class="controls">
+						<input type="text" id="secondaryschoolname"
+							name="secondaryschoolname" placeholder="secondaryschoolname" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="universityname">üniversite
+						ismi</label>
+					<div class="controls">
+						<input type="text" id="universityname" name="universityname"
+							placeholder="universityname" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="job">meslek</label>
+					<div class="controls">
+						<input type="text" id="job" name="job" placeholder="job" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="generaldescription">Genel
+						açıklama</label>
+					<div class="controls">
+						<input type="text" id="generaldescription"
+							name="generaldescription" placeholder="generaldescription" />
+					</div>
+				</div>
+
+				<div class="control-group ">
+					<label class="control-label" for="picture">Örnek resim</label>
+					<div class="controls">
+						<input type="file" id="" name="picture" placeholder="picture" />
+					</div>
+				</div>
+
+				<input class="btn btn-large btn-block btn-primary" type="submit"
+					id="" name="" value="Submit" /> #{/form}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
