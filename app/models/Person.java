@@ -43,18 +43,18 @@ public class Person extends Model {
 
 	private String generaldescription;
 	private ArrayList<Blob> pictures;
+//
+//	@OneToMany
+//	private ArrayList<Person> listOfChilds;
 
-	@OneToMany
-	private ArrayList<Person> listOfChilds;
-
-	@OneToOne
-	private Person marriedWith;
-
-	@ManyToOne
-	private Person dad;
-
-	@ManyToOne
-	private Person mom;
+//	@OneToOne
+//	private Person marriedWith;
+//
+//	@ManyToOne
+//	private Person dad;
+//
+//	@ManyToOne
+//	private Person mom;
 
 	/**
 	 * default constructor
@@ -183,13 +183,13 @@ public class Person extends Model {
 		this.pictures = pictures;
 	}
 
-	public ArrayList<Person> getListOfChilds() {
-		return listOfChilds;
-	}
-
-	public void setListOfChilds(ArrayList<Person> listOfChilds) {
-		this.listOfChilds = listOfChilds;
-	}
+//	public ArrayList<Person> getListOfChilds() {
+//		return listOfChilds;
+//	}
+//
+//	public void setListOfChilds(ArrayList<Person> listOfChilds) {
+//		this.listOfChilds = listOfChilds;
+//	}
 
 	public String getGender() {
 		return gender;
@@ -198,28 +198,28 @@ public class Person extends Model {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-
-	public Person getMarriedWith() {
-		return marriedWith;
-	}
-
-	public void setMarriedWith(Person marriedWith) {
-		this.marriedWith = marriedWith;
-	}
-
-	public Person getDad() {
-		return dad;
-	}
-
-	public void setDad(Person dad) {
-		this.dad = dad;
-	}
-
-	public Person getMom() {
-		return mom;
-	}
-
-	public void setMom(Person mom) {
-		this.mom = mom;
-	}
+//
+//	public Person getMarriedWith() {
+//		return marriedWith;
+//	}
+//
+//	public void setMarriedWith(Person marriedWith) {
+//		this.marriedWith = marriedWith;
+//	}
+//
+//	public Person getDad() {
+//		return dad;
+//	}
+//
+//	public void setDad(Person dad) {
+//		this.dad = dad;
+//	}
+//
+//	public Person getMom() {
+//		return mom;
+//	}
+//
+//	public void setMom(Person mom) {
+//		this.mom = mom;
+//	}
 }
